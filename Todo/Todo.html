@@ -1,0 +1,33 @@
+<head>
+  <title>Todo</title>
+</head>
+
+<body>
+
+ <div id="entryArea">
+  {{> entry}}
+ </div>
+ <div id="listArea">
+  {{> todo}}
+ </div>
+
+</body>
+
+<template name="entry">
+ <div>
+  <input type="text" name="todo" class="todo" value="todo" />
+  <input type="button" name="entry" id="entry" value="登録" />
+ </div>
+</template>
+
+
+<template name="todo">
+  {{#each list}}
+   <div>
+    <input type="text" name="text1" class="todo" value="TODO1" />
+    <input type="button" name="delete1" value="削除" />
+    <input type="button" name="clear1" value="消込" />
+   </div>
+  {{/each}}
+</template> 
+

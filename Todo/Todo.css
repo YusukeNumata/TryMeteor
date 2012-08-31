@@ -1,0 +1,12 @@
+/* CSS declarations go here */
+
+#entryArea {
+ display: block;
+ margin: auto;
+}
+
+.todo {
+ width: 200px; 
+}
+
+
